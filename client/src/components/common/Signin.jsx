@@ -9,7 +9,7 @@ function SIgnin() {
       justifyContent: 'center',
       alignItems: 'center',
       padding: '2rem',
-      background: 'linear-gradient(45deg, rgba(0, 255, 127, 0.05) 0%, rgba(255, 64, 129, 0.05) 100%)'
+      background: 'linear-gradient(135deg, rgba(63, 167, 214, 0.05) 0%, rgba(255, 111, 97, 0.05) 100%)'
     }}>
       <SignIn 
         appearance={{
@@ -20,10 +20,10 @@ function SIgnin() {
           },
           elements: {
             rootBox: {
-              backgroundColor: '#1A1A1A',
-              border: '1px solid rgba(0, 255, 127, 0.2)',
+              backgroundColor: 'white',
+              border: '1px solid var(--border-color)',
               borderRadius: '16px',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
+              boxShadow: '0 8px 32px rgba(26, 46, 64, 0.1)',
               maxWidth: '480px',
               width: '100%',
               padding: '2rem',
@@ -36,82 +36,83 @@ function SIgnin() {
               width: '100%'
             },
             headerTitle: {
-              color: '#00FF7F',
+              color: 'var(--primary-color)',
               fontSize: '1.75rem',
-              fontFamily: 'JetBrains Mono, monospace',
+              fontFamily: "'JetBrains Mono', monospace",
               textAlign: 'center',
               marginBottom: '1.5rem'
             },
             headerSubtitle: {
-              color: '#EAEAEA',
+              color: 'var(--text-color)',
               textAlign: 'center',
               fontSize: '1.1rem'
             },
             formButtonPrimary: {
-              backgroundColor: '#00FF7F',
-              color: '#1A1A1A',
-              fontFamily: 'JetBrains Mono, monospace',
+              backgroundColor: 'var(--secondary-color)',
+              color: 'white',
+              fontFamily: "'JetBrains Mono', monospace",
               border: 'none',
               padding: '12px 24px',
               fontSize: '1.1rem',
               '&:hover': {
-                backgroundColor: 'rgba(0, 255, 127, 0.8)'
+                backgroundColor: 'var(--primary-color)'
               }
             },
             formFieldInput: {
-              backgroundColor: '#2A2A2A',
-              color: '#EAEAEA',
-              border: '1px solid rgba(0, 255, 127, 0.2)',
+              backgroundColor: 'var(--background-color)',
+              color: 'var(--text-color)',
+              border: '1px solid var(--border-color)',
               padding: '12px 16px',
               fontSize: '1rem',
               width: '100%',
               '&:focus': {
-                border: '1px solid rgba(0, 255, 127, 0.5)',
-                outline: 'none'
+                border: '1px solid var(--secondary-color)',
+                outline: 'none',
+                boxShadow: '0 0 0 2px rgba(63, 167, 214, 0.1)'
               }
             },
             formFieldLabel: {
-              color: '#EAEAEA'
+              color: 'var(--text-color)'
             },
             footer: {
-              color: '#EAEAEA'
+              color: 'var(--text-color)'
             },
             footerActionLink: {
-              color: '#00FF7F',
+              color: 'var(--secondary-color)',
               '&:hover': {
-                color: 'rgba(0, 255, 127, 0.8)'
+                color: 'var(--primary-color)'
               }
             },
             socialButtonsBlockButton: {
-              backgroundColor: '#2A2A2A',
-              border: '1px solid rgba(0, 255, 127, 0.2)',
-              color: '#EAEAEA',
+              backgroundColor: 'var(--background-color)',
+              border: '1px solid var(--border-color)',
+              color: 'var(--text-color)',
               '&:hover': {
-                backgroundColor: '#3A3A3A'
+                backgroundColor: 'rgba(63, 167, 214, 0.05)'
               }
             },
             socialButtonsBlockButtonText: {
-              color: '#EAEAEA'
+              color: 'var(--text-color)'
             },
             dividerLine: {
-              backgroundColor: 'rgba(0, 255, 127, 0.2)'
+              backgroundColor: 'var(--border-color)'
             },
             dividerText: {
-              color: '#EAEAEA'
+              color: 'var(--text-color)'
             },
             identityPreviewText: {
-              color: '#EAEAEA'
+              color: 'var(--text-color)'
             },
             formFieldSuccessText: {
-              color: '#00FF7F'
+              color: 'var(--secondary-color)'
             },
             formFieldErrorText: {
-              color: '#FF4081'
+              color: 'var(--accent-color)'
             },
             alert: {
-              backgroundColor: '#2A2A2A',
-              border: '1px solid #FF4081',
-              color: '#FF4081'
+              backgroundColor: 'rgba(255, 111, 97, 0.1)',
+              border: '1px solid var(--accent-color)',
+              color: 'var(--accent-color)'
             }
           }
         }}

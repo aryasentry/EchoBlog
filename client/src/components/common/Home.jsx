@@ -23,7 +23,7 @@ function Home() {
     const selectedRole = e.target.value;
     currentUser.role = selectedRole;
 
-    const allowedAdminEmail = "pavankumar2005712@gmail.com"; // Your email
+    const allowedAdminEmail = "kalidhindi.arya.varmma@gmail.com"; // Your email
 
     if (selectedRole === 'admin' && currentUser.email !== allowedAdminEmail) {
       setError("Sorry, only the authorized user can be an admin.");

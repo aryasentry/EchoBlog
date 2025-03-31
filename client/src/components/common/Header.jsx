@@ -30,7 +30,7 @@ const Header = () => {
         <div className="logo-container">
           <Link to="/" className="logo-link">
             <div className="logo">
-              <span className="logo-quick">Quick</span>
+              <span className="logo-quick">Echo</span>
               <span className="logo-blog">Blog</span>
             </div>
           </Link>

@@ -9,20 +9,20 @@
 }
 
 :root {
-    --bg-primary: #1A1A1A;
-    --bg-secondary: #2A2A2A;
-    --text-primary: #EAEAEA;
-    --text-secondary: #B0B0B0;
-    --accent-primary: #00FF7F;
-    --accent-secondary: #FF4081;
-    --accent-primary-dim: rgba(0, 255, 127, 0.8);
-    --accent-secondary-dim: rgba(255, 64, 129, 0.8);
-    --border-color: rgba(0, 255, 127, 0.2);
+    --primary-color: #1A2E40;
+    --secondary-color: #3FA7D6;
+    --background-color: #F8F9FA;
+    --accent-color: #FF6F61;
+    --text-color: #333333;
+    --primary-dim: rgba(26, 46, 64, 0.8);
+    --secondary-dim: rgba(63, 167, 214, 0.8);
+    --accent-dim: rgba(255, 111, 97, 0.8);
+    --border-color: rgba(26, 46, 64, 0.1);
 }
 
 body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
     min-height: 100vh;
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
@@ -31,66 +31,66 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'JetBrains Mono', monospace;
-    color: var(--text-primary);
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 p {
-    color: var(--text-primary);
+    color: var(--text-color);
     margin-bottom: 1rem;
 }
 
 /* Links */
 a {
-    color: var(--accent-primary-dim);
+    color: var(--secondary-color);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: var(--accent-primary);
+    color: var(--primary-color);
 }
 
 /* Header Styles */
 .header {
     margin-bottom: 30px;
-    background-color: var(--bg-primary);
+    background-color: var(--primary-color);
     border-bottom: 1px solid var(--border-color);
 }
 
 .link {
-    color: var(--accent-primary-dim);
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 1.1rem;
     transition: all 0.3s ease;
 }
 
 .link:hover {
-    color: var(--accent-primary);
+    color: var(--primary-color);
 }
 
 /* Cards and Containers */
 .card {
-    background-color: var(--bg-secondary);
+    background-color: white;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(26, 46, 64, 0.1);
     transition: all 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(0, 255, 127, 0.1);
+    box-shadow: 0 6px 24px rgba(26, 46, 64, 0.15);
 }
 
 .card .heading {
-    color: var(--accent-primary);
+    color: var(--primary-color);
     font-family: 'JetBrains Mono', monospace;
 }
 
 /* User Interface Elements */
 .role-radio {
-    background-color: var(--bg-secondary);
+    background-color: white;
     font-size: 1.1rem;
     border-radius: 10px;
     padding: 1rem;
@@ -98,24 +98,24 @@ a:hover {
 }
 
 .form-check-input {
-    background-color: var(--bg-primary);
-    border-color: var(--accent-primary-dim);
+    background-color: var(--background-color);
+    border-color: var(--secondary-color);
 }
 
 .form-check-input:checked {
-    background-color: var(--accent-primary);
-    border-color: var(--accent-primary);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .form-check-label {
-    color: var(--text-primary);
+    color: var(--text-color);
 }
 
 /* Buttons */
 .custom-btn {
-    background: var(--bg-secondary);
-    border: 1px solid var(--accent-primary-dim);
-    color: var(--accent-primary);
+    background: var(--secondary-color);
+    border: none;
+    color: white;
     padding: 8px 16px;
     border-radius: 6px;
     font-family: 'JetBrains Mono', monospace;
@@ -125,15 +125,15 @@ a:hover {
 }
 
 .custom-btn:hover {
-    background: var(--accent-primary);
-    color: var(--bg-primary);
+    background: var(--primary-color);
+    color: white;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 255, 127, 0.2);
+    box-shadow: 0 4px 12px rgba(26, 46, 64, 0.2);
 }
 
 .add-article-btn {
-    background-color: var(--accent-secondary-dim);
-    color: var(--text-primary);
+    background-color: var(--accent-color);
+    color: white;
     border: none;
     padding: 8px 20px;
     border-radius: 8px;
@@ -144,22 +144,22 @@ a:hover {
 }
 
 .add-article-btn:hover {
-    background-color: var(--accent-secondary);
+    background-color: var(--accent-dim);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.2);
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.2);
 }
 
 /* Article Styles */
 .article-content {
-    background-color: var(--bg-secondary);
+    background-color: white;
     padding: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(26, 46, 64, 0.1);
 }
 
 .article-content::first-letter {
-    color: var(--accent-primary);
+    color: var(--accent-color);
     font-size: 200%;
     font-weight: bold;
 }
@@ -167,53 +167,53 @@ a:hover {
 /* Comments Section */
 .comments p {
     font-family: 'Inter', sans-serif;
-    color: var(--text-primary);
+    color: var(--text-color);
 }
 
 .comments .user-name {
     font-size: 1.1rem;
-    color: var(--accent-primary-dim);
+    color: var(--primary-color);
 }
 
 .comments .comment {
     margin-left: 40px;
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-color);
 }
 
 /* Footer Styles */
 .bg-footer {
-    background-color: var(--bg-secondary);
+    background-color: var(--primary-color);
     border-top: 1px solid var(--border-color);
     padding: 50px 0 30px;
 }
 
 .footer-heading {
-    color: var(--accent-primary);
+    color: var(--secondary-color);
     font-family: 'JetBrains Mono', monospace;
     letter-spacing: 2px;
 }
 
 .footer-link a {
-    color: var(--text-secondary);
+    color: white;
     line-height: 40px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .footer-link a:hover {
-    color: var(--accent-primary);
+    color: var(--secondary-color);
 }
 
 .contact-info {
-    color: var(--text-secondary);
+    color: white;
     font-size: 0.9rem;
 }
 
 /* User Profile Elements */
 .user-button .role {
-    color: var(--bg-primary);
-    background-color: var(--accent-primary-dim);
+    color: white;
+    background-color: var(--secondary-color);
     font-weight: 500;
     padding: 2px 8px;
     font-size: 0.7rem;
@@ -221,15 +221,15 @@ a:hover {
 }
 
 .user-button .user-name {
-    color: var(--text-primary);
+    color: var(--text-color);
     font-size: 1rem;
 }
 
 /* Form Elements */
 input, textarea, select {
-    background-color: var(--bg-secondary);
+    background-color: white;
     border: 1px solid var(--border-color);
-    color: var(--text-primary);
+    color: var(--text-color);
     padding: 8px 12px;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -237,8 +237,8 @@ input, textarea, select {
 
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: var(--accent-primary-dim);
-    box-shadow: 0 0 0 2px rgba(0, 255, 127, 0.1);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(63, 167, 214, 0.1);
 }
 
 /* Scrollbar Styling */
@@ -247,32 +247,29 @@ input:focus, textarea:focus, select:focus {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-secondary);
+    background: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-primary-dim);
+    background: var(--secondary-color);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-primary);
+    background: var(--primary-color);
 }
 
 /* Utility Classes */
 .text-accent {
-    color: var(--accent-primary);
+    color: var(--accent-color);
 }
 
 .text-accent-secondary {
-    color: var(--accent-secondary);
+    color: var(--secondary-color);
 }
 
 .bg-gradient {
-    background: linear-gradient(45deg, 
-        rgba(0, 255, 127, 0.1), 
-        rgba(255, 64, 129, 0.1)
-    );
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
 /* Add Bootstrap Icon Font */
